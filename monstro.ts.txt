@@ -1,0 +1,21 @@
+
+class Monstro{
+  nome:string
+  forca:number
+  nivel:number
+  altura: number
+  constructor(nome:string,forca:number,altura:number){
+    this.nome = nome
+    this.forca = forca
+    this.nivel = 10
+    this.altura = altura
+  }
+
+  olharAssutador(){
+    console.log("Ohar Assustador")
+  }
+}
+
+let monstro1 = new Monstro("Tarantula",1000,25)
+console.log(monstro1)
+ 
