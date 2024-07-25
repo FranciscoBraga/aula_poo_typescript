@@ -1,0 +1,18 @@
+abstract class  Personagem{
+  public nome: string
+  public nivel: number
+  public forca: number
+  public vida: number
+  public poder: string
+
+  constructor(nome:string,forca:number,vida:number){
+    this.nome = nome
+    this.forca = forca
+    this.nivel = 10
+    this.vida = vida
+    this.poder = ''
+  }
+
+  abstract olhar():void  
+
+ }

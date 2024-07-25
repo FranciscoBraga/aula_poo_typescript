@@ -1,17 +1,14 @@
 
-class Monstro{
-  nome:string
-  forca:number
-  nivel:number
+class Monstro extends Personagem{
+
   altura: number
-  constructor(nome:string,forca:number,altura:number){
-    this.nome = nome
-    this.forca = forca
-    this.nivel = 10
+
+  constructor(nome:string,forca:number,vida:number,altura:number){
+    super(nome,forca,vida)
     this.altura = altura
   }
 
-  olharAssutador(){
+  olhar(){
     console.log("Ohar Assustador")
   }
 }

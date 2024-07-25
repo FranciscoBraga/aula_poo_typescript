@@ -1,11 +1,13 @@
- class Heroi{ 
-   nome: string 
+class Heroi{ 
+   public nome: string 
    forca:number 
-   nivel : number
-    constructor(nome:string, forca: number){
-        this.nome = nome
-        this.forca = forca
-        this.nivel = 1
+   nivel : number 
+   comportamento: string
+    constructor(nome:string,forca:number,comportamento: string){
+      this.nome = nome
+      this.forca = forca
+      this.nivel = 1
+      this.comportamento = comportamento
     }
 
    olharDestemido(){
@@ -13,7 +15,6 @@
    }
 
  }
-
  let heroi1 = new Heroi("Art",1000)
 console.log(heroi1)
 heroi1.olharDestemido()
